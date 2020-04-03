@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_info_place"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mask_group" />
+
+        <RelativeLayout
+            android:id="@+id/place_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:layout_alignParentTop="true"
+                android:id="@+id/namePlaceInItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="НАЗВА РЕСТОРАНУ"
+                android:textColor="@color/ColorBlack"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/names_kitchens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namePlaceInItem"
+                android:layout_marginBottom="8dp"
+                android:textSize="12sp"
+                android:text="Українська, Українська, Італійська, Українська,Італійська, Українська,"
+                android:textColor="@color/ColorGrey" />
+
+            <RatingBar
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp"
+                android:layout_below="@+id/names_kitchens"
+                android:layout_alignParentLeft="true"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/reviews_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="21dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/reviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:foregroundGravity="center_vertical"
+                android:text="@string/order"
+                android:textColor="@color/ColorGrey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reviews"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:drawableLeft="@drawable/ic_dollar"
+                android:drawablePadding="4dp"
+                android:text="Від $ грн"
+                android:textColor="@color/ColorBlack"
+                android:textSize="11sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="4dp"
+            android:background="#C4C4C4"
+            android:gravity="bottom" />
+
+        <RelativeLayout
+            android:id="@+id/reviews_tab1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:paddingLeft="21dp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/reviews1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:foregroundGravity="center_vertical"
+                android:text="@string/delivery_time"
+                android:textColor="@color/ColorGrey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reviews1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:drawableLeft="@drawable/ic_clock"
+                android:drawablePadding="4dp"
+                android:gravity="left"
+                android:paddingLeft="4dp"
+                android:text="Від $ хв"
+                android:textColor="@color/ColorBlack"
+                android:textSize="11sp" />
+            />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="10dp"
+            android:background="#C4C4C4"
+            android:gravity="bottom" />
+
+        <RelativeLayout
+            android:id="@+id/reviews_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:textSize="11sp"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/reviews2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:foregroundGravity="center_vertical"
+                android:text="@string/delivery_cost"
+                android:textColor="@color/ColorGrey"
+                android:textSize="11sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reviews2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:drawableLeft="@drawable/ic_car"
+                android:drawablePadding="4dp"
+                android:gravity="left"
+                android:text="Від $ грн"
+                android:textColor="@color/ColorBlack"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

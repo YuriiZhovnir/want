@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">WantToEatKotlin</string>
+    <string name="error_blank">Поле не може бути пустим.</string>
+    <string name="not_valid_email">Невірно введений електронний адрес.</string>
+    <string name="email">Електронний адрес</string>
+    <string name="phone">Телефон</string>
+    <string name="not_valid_phone">Невірно введений номер телефону.</string>
+    <string name="cart">Кошик</string>
+    <string name="sorting">Сортування</string>
+    <string name="reviews">Відгуки</string>
+    <string name="info_place">Про заклад</string>
+    <string name="call">Подзвонити</string>
+    <string name="delivery_cost">Вартість доставки:</string>
+    <string name="delivery_time">Час доставки:</string>
+    <string name="order">Замовлення:</string>
+    <string name="tracking">Відстеження</string>
+</resources>
